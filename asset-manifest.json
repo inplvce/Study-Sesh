@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/Study-Sesh/static/css/main.18f8ca56.css",
+    "main.js": "/Study-Sesh/static/js/main.a91074c3.js",
+    "static/js/787.b2010ada.chunk.js": "/Study-Sesh/static/js/787.b2010ada.chunk.js",
+    "static/media/avatar.png": "/Study-Sesh/static/media/avatar.d947cb9d0d13765666b6.png",
+    "index.html": "/Study-Sesh/index.html",
+    "main.18f8ca56.css.map": "/Study-Sesh/static/css/main.18f8ca56.css.map",
+    "main.a91074c3.js.map": "/Study-Sesh/static/js/main.a91074c3.js.map",
+    "787.b2010ada.chunk.js.map": "/Study-Sesh/static/js/787.b2010ada.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.18f8ca56.css",
+    "static/js/main.a91074c3.js"
+  ]
+}
