@@ -4,25 +4,34 @@ import {AffairType, FilterType} from '../HW2'
 import s from './Affairs.module.css'
 
 type AffairsPropsType = {
-    data: any // need to fix any
-    setFilter: any
-    deleteAffairCallback: any
+    data: AffairType[] // need to fix any
+    setFilter: (filter: FilterType) => void
+    deleteAffairCallback: (_id: number) => void
     filter: FilterType
 }
 
 function Affairs(props: AffairsPropsType) {
-    const setAll = () => {
+    const setAll = (filter: FilterType) => {
         // need to fix
+        return props.setFilter('all')
+    }
+    const setHigh = (filter: FilterType) => {
+        // need to fix
+        props.setFilter('high')
+    }
+    const setMiddle = (filter: FilterType) => {
+        // need to fix
+        props.setFilter('middle')
+    }
+    const setLow = (filter: FilterType) => {
+        // need to fix
+        props.setFilter('low')
+    }
 
-    }
-    const setHigh = () => {
-        // need to fix
-    }
-    const setMiddle = () => {
-        // need to fix
-    }
-    const setLow = () => {
-        // need to fix
+
+
+    const deleteAffairCallbackHandler = (id: number) => {
+        props.deleteAffairCallback(id)
     }
 
     const cnAll = s.button + ' ' + s.all + (props.filter === 'all' ? ' ' + s.active : '')
@@ -34,7 +43,7 @@ function Affairs(props: AffairsPropsType) {
         <Affair
             key={a._id} // кеи ОБЯЗАТЕЛЬНЫ в 99% - так что лучше их писать всегда при создании компонент в мапе
             affair={a}
-            deleteAffairCallback={props.deleteAffairCallback}
+            deleteAffairCallback={()=> deleteAffairCallbackHandler(a._id)}
         />
     ))
 
@@ -43,31 +52,22 @@ function Affairs(props: AffairsPropsType) {
             <div className={s.buttonContainer}>
                 <button
                     id={'hw2-button-all'}
-                    onClick={setAll}
-                    className={cnAll}
-                >
-                    All
+                    onClick={()=>setAll('all')} className={cnAll}>All
                 </button>
                 <button
                     id={'hw2-button-high'}
-                    onClick={setHigh}
-                    className={cnHigh}
-                >
-                    High
+                    onClick={()=>setHigh('high')}
+                    className={cnHigh}>High
                 </button>
                 <button
                     id={'hw2-button-middle'}
-                    onClick={setMiddle}
-                    className={cnMiddle}
-                >
-                    Middle
+                    onClick={()=>setMiddle('middle')}
+                    className={cnMiddle}>Middle
                 </button>
                 <button
                     id={'hw2-button-low'}
-                    onClick={setLow}
-                    className={cnLow}
-                >
-                    Low
+                    onClick={()=>setLow('low')}
+                    className={cnLow}>Low
                 </button>
             </div>
             <div className={s.affairs}>{mappedAffairs}</div>
