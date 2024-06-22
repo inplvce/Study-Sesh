@@ -1,8 +1,9 @@
 import React from 'react'
 import s from './Message.module.css'
+import {FriendMessageProps} from "../friend-message/FriendMessage";
 
 // нужно создать правильный тип вместо any
-export type MessagePropsType = any
+export type MessagePropsType = FriendMessageProps
 
 // нужно отобразить приходящие данные
 const Message = (props: MessagePropsType) => {

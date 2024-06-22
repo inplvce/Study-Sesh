@@ -13,6 +13,7 @@ type AffairsPropsType = {
 function Affairs(props: AffairsPropsType) {
     const setAll = () => {
         // need to fix
+
     }
     const setHigh = () => {
         // need to fix

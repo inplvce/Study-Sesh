@@ -6,12 +6,13 @@ import s2 from '../Affairs.module.css'
 type AffairPropsType = {
     // key не нужно типизировать
     affair: AffairType
-    deleteAffairCallback: any // need to fix any
+    deleteAffairCallback: () => void // need to fix any
 }
 
 function Affair(props: AffairPropsType) {
     const deleteCallback = () => {
         // need to fix
+        
     }
 
     const nameClass = s.name + ' ' + s2[props.affair.priority]
