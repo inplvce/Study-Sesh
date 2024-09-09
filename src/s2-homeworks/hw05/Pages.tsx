@@ -22,9 +22,9 @@ function Pages() {
 
 
                 {/*роуты для /pre-junior, /junior, /junior-plus*/}
-                <Route path="/PRE_JUNIOR" element={<PreJunior/>}/>
-                <Route path="/JUNIOR" element={<Junior/>}/>
-                <Route path="/JUNIOR_PLUS" element={<JuniorPlus/>}/>
+                <Route path={PATH.PRE_JUNIOR} element={<PreJunior/>}/>
+                <Route path={PATH.JUNIOR} element={<Junior/>}/>
+                <Route path={PATH.JUNIOR_PLUS} element={<JuniorPlus/>}/>
 
                 {/*<Route ...*/}
                 {/*<Route ...*/}

@@ -2,6 +2,7 @@
 }
 
 .sidebar.open {
+
 }
 
 .background {
@@ -17,6 +18,8 @@
 }
 
 .nav a.active {
+    color: lightskyblue;
+    text-decoration: none;
 }
 .close {
 }
