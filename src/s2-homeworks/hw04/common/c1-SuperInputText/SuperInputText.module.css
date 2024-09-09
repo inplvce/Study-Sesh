@@ -8,17 +8,13 @@
 }
 
 .superInput {
-
 }
 
 .errorInput {
-    outline-color: lightskyblue;
 }
 
 .errorInput:focus {
-    border-radius: 1px;
 }
 
 .error {
-    color: lightskyblue;
 }
