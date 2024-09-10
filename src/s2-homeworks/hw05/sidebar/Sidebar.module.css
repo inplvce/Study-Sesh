@@ -1,4 +1,7 @@
 .sidebar {
+    background-color: lightyellow;
+
+
 }
 
 .sidebar.open {
@@ -9,9 +12,13 @@
 }
 
 .nav {
+
 }
 
 .nav a {
+    margin: 20px;
+    text-decoration: none;
+    color: saddlebrown;
 }
 
 .nav a:hover {
@@ -19,7 +26,9 @@
 
 .nav a.active {
     color: lightskyblue;
+    margin: 20px;
     text-decoration: none;
+
 }
 .close {
 }
