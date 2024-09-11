@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, {useEffect, useRef, useState} from 'react'
 import SuperEditableSpan from './common/c4-SuperEditableSpan/SuperEditableSpan'
 import { restoreState, saveState } from './localStorage/localStorage'
 import s2 from '../../s1-main/App.module.css'
@@ -13,14 +13,19 @@ import s from './HW6.module.css'
 
 const HW6 = () => {
     const [value, setValue] = useState<string>('')
+    const prevValue = useRef<string>('');
 
     const save = () => {
         saveState<string>('hw6-editable-span-value', value)
+
+        console.log(value)
     }
     const restore = () => {
         // делают студенты
-
+        setValue(value)
     }
+
+
 
     return (
         <div id={'hw6'}>
