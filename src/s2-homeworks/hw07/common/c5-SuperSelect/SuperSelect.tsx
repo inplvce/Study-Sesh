@@ -5,12 +5,12 @@ import React, {
 } from 'react'
 import s from './SuperSelect.module.css'
 
+// * 1 - в файле SuperSelect.tsx дописать логику функции onChangeCallback
+
 type DefaultSelectPropsType = DetailedHTMLProps<
     SelectHTMLAttributes<HTMLSelectElement>,
     HTMLSelectElement
 >
-
-// * 1 - в файле SuperSelect.tsx дописать логику функции onChangeCallback
 
 type SuperSelectPropsType = DefaultSelectPropsType & {
     options?: any[]
@@ -24,11 +24,12 @@ const SuperSelect: React.FC<SuperSelectPropsType> = ({
     onChangeOption,
     ...restProps
 }) => {
-    const mappedOptions: any[] = options ? options.map((o, i) => (
+    const mappedOptions: any[] = options
+        ? options.map((o) => (
               <option
                   id={'hw7-option-' + o.id}
                   className={s.option}
-                  key={o + '-' + i}
+                  key={o.id}
                   value={o.value}
               >
                   {o.value}
@@ -39,7 +40,8 @@ const SuperSelect: React.FC<SuperSelectPropsType> = ({
     const onChangeCallback = (e: ChangeEvent<HTMLSelectElement>) => {
         // делают студенты
         onChange && onChange(e)
-      onChangeOption && onChangeOption(e.currentTarget.value)
+        onChangeOption && onChangeOption(e.currentTarget.value)
+        console.log(e.currentTarget.value)
     }
 
     const finalSelectClassName = s.select + (className ? ' ' + className : '')
