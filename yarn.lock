@@ -5,36 +5,6 @@ __metadata:
   version: 8
   cacheKey: 10c0
 
-" @workspace:.":
-  version: 0.0.0-use.local
-  resolution: " @workspace:."
-  dependencies:
-    "@emotion/react": "npm:11.10.4"
-    "@emotion/styled": "npm:11.10.4"
-    "@mui/material": "npm:5.10.6"
-    "@testing-library/jest-dom": "npm:5.16.5"
-    "@testing-library/react": "npm:13.3.0"
-    "@testing-library/user-event": "npm:13.5.0"
-    "@types/gh-pages": "npm:^6"
-    "@types/jest": "npm:27.5.2"
-    "@types/node": "npm:16.11.56"
-    "@types/react": "npm:18.0.17"
-    "@types/react-dom": "npm:18.0.6"
-    "@types/uuid": "npm:8.3.4"
-    axios: "npm:0.27.2"
-    gh-pages: "npm:^6.1.1"
-    react: "npm:18.2.0"
-    react-dom: "npm:18.2.0"
-    react-redux: "npm:8.0.4"
-    react-router-dom: "npm:6.4.3"
-    react-scripts: "npm:5.0.1"
-    redux: "npm:4.2.0"
-    typescript: "npm:4.7.4"
-    uuid: "npm:9.0.0"
-    web-vitals: "npm:2.1.4"
-  languageName: unknown
-  linkType: soft
-
 "@adobe/css-tools@npm:^4.0.1":
   version: 4.0.1
   resolution: "@adobe/css-tools@npm:4.0.1"
@@ -7673,6 +7643,36 @@ __metadata:
   checksum: 10c0/ec93838d2328b619532e4f1ff05df7909760b6f66d9c9e2ded11e5c1897d6f2f9980c54dd638f88654b00919ce31e827040631eab0a3969e4d1abefa0719516a
   languageName: node
   linkType: hard
+
+"inplvce@workspace:.":
+  version: 0.0.0-use.local
+  resolution: "inplvce@workspace:."
+  dependencies:
+    "@emotion/react": "npm:11.10.4"
+    "@emotion/styled": "npm:11.10.4"
+    "@mui/material": "npm:5.10.6"
+    "@testing-library/jest-dom": "npm:5.16.5"
+    "@testing-library/react": "npm:13.3.0"
+    "@testing-library/user-event": "npm:13.5.0"
+    "@types/gh-pages": "npm:^6"
+    "@types/jest": "npm:27.5.2"
+    "@types/node": "npm:16.11.56"
+    "@types/react": "npm:18.0.17"
+    "@types/react-dom": "npm:18.0.6"
+    "@types/uuid": "npm:8.3.4"
+    axios: "npm:0.27.2"
+    gh-pages: "npm:^6.1.1"
+    react: "npm:18.2.0"
+    react-dom: "npm:18.2.0"
+    react-redux: "npm:8.0.4"
+    react-router-dom: "npm:6.4.3"
+    react-scripts: "npm:5.0.1"
+    redux: "npm:4.2.0"
+    typescript: "npm:4.7.4"
+    uuid: "npm:9.0.0"
+    web-vitals: "npm:2.1.4"
+  languageName: unknown
+  linkType: soft
 
 "internal-slot@npm:^1.0.3":
   version: 1.0.3
