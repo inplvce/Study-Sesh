@@ -34,6 +34,7 @@ const HW7 = () => {
                             options={arr}
                             value={value}
                             onChangeOption={onChangeOption}
+
                         />
                     </div>
                     <div>
