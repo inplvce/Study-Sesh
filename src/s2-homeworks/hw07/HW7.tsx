@@ -19,13 +19,12 @@ const arr = [
 ] // value может быть изменено
 
 const HW7 = () => {
-    const [value, onChangeOption] = useState('x') // селект и радио должны работать синхронно
+    const [value, onChangeOption] = useState('x')
 
     return (
         <div id={'hw7'}>
             <div className={s2.hwTitle}>Homework #7</div>
 
-            {/*демонстрация возможностей компонент:*/}
             <div className={s2.hw}>
                 <div className={s.container}>
                     <div>
@@ -34,7 +33,6 @@ const HW7 = () => {
                             options={arr}
                             value={value}
                             onChangeOption={onChangeOption}
-
                         />
                     </div>
                     <div>
