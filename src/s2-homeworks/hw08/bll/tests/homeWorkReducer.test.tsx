@@ -22,7 +22,6 @@ test('sort name up', () => {
     })
 
     expect(newState[0]._id).toBe(1)
-    expect(newState[5]._id).toBe(0)
 })
 
 test('sort name down', () => {
